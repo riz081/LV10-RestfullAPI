@@ -82,7 +82,7 @@ class PostController extends Controller
             $image = $request->file('image');
             $image->storeAs('public/posts', $image->hashName());
 
-            // Hapus Gambar Lama
+            // Hapus Gambar Lama tes
             Storage::delete('public/posts/'. basename($post->image));
 
             // ganti gambar / upload gambar baru
